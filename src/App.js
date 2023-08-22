@@ -4,15 +4,18 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
+import { useTheme } from "./Theme/ThemeProvider";
+import "./App.css";
 
 
 function App() {
+  const { isDarkMode, toggleTheme } = useTheme();
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar className={` ${isDarkMode ? 'dark-theme' : ''}`} />
       <Routes>
         <Route
-          path="about"
+          path="/"
           element={<MainContainer />}
         />
         <Route path="resume" element={<MainContainer />} />
@@ -24,9 +27,10 @@ function App() {
 }
 
 function MainContainer() {
+  const { isDarkMode, toggleTheme } = useTheme();
   return (
-    <div>
-      <section id="about">
+    <div className={` ${isDarkMode ? 'dark-theme' : ''}`}>
+      <section id="#">
         <About />
       </section>
       <section id="resume">

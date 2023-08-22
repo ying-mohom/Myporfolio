@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import { FaBars } from 'react-icons/fa';
-import { ImCross } from 'react-icons/im';
+import { ImCross, ImSun } from 'react-icons/im';
+import { BsMoonStarsFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
+import { useTheme } from "../Theme/ThemeProvider";
 import "./navbar.css";
 
 
 
 const Navbar = () => {
     const [mobile, setMobile] = useState(false);
+    const { isDarkMode, toggleTheme } = useTheme();
 
 
     const closeMobileMenu = () => {
@@ -36,20 +39,21 @@ const Navbar = () => {
     }, []);
     return (
         <>
-            <nav className="navbar">
-                <p className="larger">Ying Mo Hom</p>
-
-
+            <nav className={`navbar ${isDarkMode ? 'dark-theme' : ''}`}>
+                <h2 className="logo">	&quot; <>Ying</> 	&quot;</h2>
                 <button className="mobile-menu-icon" onClick={() => setMobile(!mobile)}>
                     {mobile ? <ImCross /> : <FaBars />}
                 </button>
 
 
                 <ul className={mobile ? "nav-links-mobile" : "nav-links"}>
-                    <li className="nav-item"><Link to="about" smooth={true} onClick={closeMobileMenu} activeClass="active" spy={true} offset={-70} duration={700}>About Me</Link></li>
+                    <li className="nav-item"><Link to="/" smooth={true} onClick={closeMobileMenu} activeClass="active" spy={true} offset={-70} duration={700}>About Me</Link></li>
                     <li className="nav-item"> <Link to="resume" smooth={true} onClick={closeMobileMenu} activeClass="active" spy={true} offset={-70} duration={700}>Resume</Link></li>
                     <li className="nav-item"> <Link to="projects" smooth={true} onClick={closeMobileMenu} activeClass="active" spy={true} offset={-70} duration={700}>Projects</Link></li>
                     <li className="nav-item"> <Link to="contact" smooth={true} onClick={closeMobileMenu} activeClass="active" spy={true} offset={-70} duration={700}>Contact</Link></li>
+                    <li onClick={toggleTheme}>
+                        {isDarkMode ? <ImSun /> : <BsMoonStarsFill />}
+                    </li>
                 </ul>
             </nav >
         </>
