@@ -2,10 +2,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Contact from './components/Contact';
-import Resume from "./components/Resume";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import { useTheme } from "./Theme/ThemeProvider";
 import "./App.css";
+
 
 
 function App() {
@@ -34,7 +35,7 @@ function MainContainer() {
         <About />
       </section>
       <section id="resume">
-        <Resume />
+        <Skills />
       </section>
       <section id="projects">
         <Projects />

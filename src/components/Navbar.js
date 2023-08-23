@@ -40,7 +40,7 @@ const Navbar = () => {
     return (
         <>
             <nav className={`navbar ${isDarkMode ? 'dark-theme' : ''}`}>
-                <h2 className="logo">	&quot; <>Ying</> 	&quot;</h2>
+                <img className="logo" src="photos/Y.png" style={{ width: 50, height: 50 }} /><span className="logoText">Portfolio</span>
                 <button className="mobile-menu-icon" onClick={() => setMobile(!mobile)}>
                     {mobile ? <ImCross /> : <FaBars />}
                 </button>
@@ -48,7 +48,7 @@ const Navbar = () => {
 
                 <ul className={mobile ? "nav-links-mobile" : "nav-links"}>
                     <li className="nav-item"><Link to="/" smooth={true} onClick={closeMobileMenu} activeClass="active" spy={true} offset={-70} duration={700}>About Me</Link></li>
-                    <li className="nav-item"> <Link to="resume" smooth={true} onClick={closeMobileMenu} activeClass="active" spy={true} offset={-70} duration={700}>Resume</Link></li>
+                    <li className="nav-item"> <Link to="resume" smooth={true} onClick={closeMobileMenu} activeClass="active" spy={true} offset={-70} duration={700}>Skills</Link></li>
                     <li className="nav-item"> <Link to="projects" smooth={true} onClick={closeMobileMenu} activeClass="active" spy={true} offset={-70} duration={700}>Projects</Link></li>
                     <li className="nav-item"> <Link to="contact" smooth={true} onClick={closeMobileMenu} activeClass="active" spy={true} offset={-70} duration={700}>Contact</Link></li>
                     <li onClick={toggleTheme}>

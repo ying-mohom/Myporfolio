@@ -35,18 +35,26 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 12vh;
+    height: 70px;
     position: sticky;
     top: 0;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 3px 20px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 2px 0px;
     background-color: #fff;
+    z-index: 10000;
 
 }
 
 .logo {
-    margin-top: 15px;
-    margin-left: 90px;
+    margin-top: -15px;
+    margin-left: 38px;
     align-items: center;
+}
+
+.logoText {
+    margin-left: -165px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: -15px;
 }
 
 .iconForNavbar {
@@ -61,14 +69,14 @@ a {
     display: flex;
     justify-content: flex-end;
     width: 75%;
-    margin-right: 80px;
+    margin-right: 35px;
 }
 
 
 .nav-links li {
     color: #101010;
     font-size: 18px;
-    padding: 0 10px;
+    padding: 15px 10px;
     margin: 0 10px;
     cursor: pointer;
     text-transform: capitalize;

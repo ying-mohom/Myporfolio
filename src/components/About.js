@@ -28,11 +28,10 @@ const About = () => {
     return (
         <>
             <section className="section">
-                <div className='social-link'>
-                    <a href="#"><AiFillGithub /></a>
+                <div className='social-link' id="social-links">
+                    <a href="https://github.com/ying-mohom"><AiFillGithub /></a>
                     <a href="#"><FaFacebook /></a>
                     <a href="#"><AiFillLinkedin /></a>
-                    {/* <div className='vl'></div> */}
                 </div>
                 <div div className="main" >
                     <div className="image">
@@ -46,22 +45,17 @@ const About = () => {
                         <h2 className="position">Junior Web Developer</h2>
                         <p className="text"> I'm a passionate Junior Web Developer dedicated to crafting innovative and engaging web experiences. With a foundation in HTML, CSS, and JavaScript, I thrive on turning ideas into reality. I'm excited to contribute to projects that push boundaries and inspire users through seamless design and functionality.</p>
 
-                        {/* <Link to="resume"><button className="resume">Resume</button></Link> */}
-                        <Link to="contact"><button className="contact">
+                        <a href="photos/Y.png" className="no-decoration" download={true}> <button className="resume">Download CV</button></a>
+                        {/* <Link to="contact"><button className="contact">
                             <div className="button-content">
                                 Contact Me<BsArrowRightShort className="arrow-icon" />
                             </div>
-                        </button></Link>
-
+                      </button></Link> */}
                     </div>
-
-
-
                 </div >
-
             </section >
             <div class="mouse-container">
-                <div class="mouse"></div>
+                <Link to="contact"><div class="mouse"></div></Link>
             </div>
 
 

@@ -1,0 +1,52 @@
+.get_in_touch {
+    max-width: 650px;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+}
+
+.get_in_touch .title {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #5543ca;
+    background: linear-gradient(to right, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-form {
+    padding: 0px 25px;
+}
+
+.contact-form .form-field {
+    position: relative;
+    margin: 32px auto;
+}
+
+.form-floating label {
+    font-size: 15px;
+    margin-left: 12px;
+    background-color: transparent;
+}
+
+
+
+.contact-form .submit-btn {
+    display: inline-block;
+    background: linear-gradient(89deg, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer
+}
