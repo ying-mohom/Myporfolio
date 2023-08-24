@@ -1,0 +1,14 @@
+.progress-background {
+    background-color: #647dee;
+    background-image: linear-gradient(to right, #647dee 10%, #6469c8 34%);
+}
+
+.progress-bar {
+    transition: width 1s ease;
+}
+
+.skill-title {
+    padding-top: 50px;
+    text-align: center;
+    font-weight: 600;
+}

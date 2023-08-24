@@ -16,10 +16,10 @@ function App() {
       <Navbar className={` ${isDarkMode ? 'dark-theme' : ''}`} />
       <Routes>
         <Route
-          path="/"
+          path="about"
           element={<MainContainer />}
         />
-        <Route path="resume" element={<MainContainer />} />
+        <Route path="skills" element={<MainContainer />} />
         <Route path="projects" element={<MainContainer />} />
         <Route path="contact" element={<MainContainer />} />
       </Routes>
@@ -31,10 +31,10 @@ function MainContainer() {
   const { isDarkMode, toggleTheme } = useTheme();
   return (
     <div className={` ${isDarkMode ? 'dark-theme' : ''}`}>
-      <section id="#">
+      <section id="about">
         <About />
       </section>
-      <section id="resume">
+      <section id="skills">
         <Skills />
       </section>
       <section id="projects">

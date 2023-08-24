@@ -30,12 +30,12 @@ const About = () => {
             <section className="section">
                 <div className='social-link' id="social-links">
                     <a href="https://github.com/ying-mohom"><AiFillGithub /></a>
-                    <a href="#"><FaFacebook /></a>
-                    <a href="#"><AiFillLinkedin /></a>
+                    <a href="https://www.facebook.com/profile.php?id=100015051600955&mibextid=ZbWKwL"><FaFacebook /></a>
+                    <a href="https://www.linkedin.com/in/ying-mo-hom"><AiFillLinkedin /></a>
                 </div>
                 <div div className="main" >
                     <div className="image">
-                        <img src="photos/profile.png" alt="MyVectorImage" style={{ width: 400, height: 400 }} />
+                        <img src="photos/work.png" alt="MyVectorImage" style={{ width: 450, height: 450 }} />
                     </div>
                     <div className="right">
                         <p>Hi There</p>
@@ -43,9 +43,9 @@ const About = () => {
                             I'm <span className="name">{displayText}</span>
                         </h1>
                         <h2 className="position">Junior Web Developer</h2>
-                        <p className="text"> I'm a passionate Junior Web Developer dedicated to crafting innovative and engaging web experiences. With a foundation in HTML, CSS, and JavaScript, I thrive on turning ideas into reality. I'm excited to contribute to projects that push boundaries and inspire users through seamless design and functionality.</p>
+                        <p className="text"> I'm a passionate Junior Web Developer dedicated to crafting innovative and engaging web experiences. With a foundation in HTML, CSS, and JavaScript, I thrive on turning ideas into reality. </p>
 
-                        <a href="photos/Y.png" className="no-decoration" download={true}> <button className="resume">Download CV</button></a>
+                        <a href="cv/YingMoHomCV.pdf" className="no-decoration" download={true}> <button className="resume">Download CV</button></a>
                         {/* <Link to="contact"><button className="contact">
                             <div className="button-content">
                                 Contact Me<BsArrowRightShort className="arrow-icon" />
@@ -54,9 +54,15 @@ const About = () => {
                     </div>
                 </div >
             </section >
-            <div class="mouse-container">
-                <Link to="contact"><div class="mouse"></div></Link>
+            <div className="mouse-container">
+                <Link to="skills">
+                    <div className="d-flex justify-content-between">
+                        <div className="mouse"></div>
+                        <span className="scroll-text ps-2 pt-3 ">Scroll Down</span>
+                    </div>
+                </Link>
             </div>
+
 
 
         </>

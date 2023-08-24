@@ -85,11 +85,8 @@ a {
 }
 
 .active {
-    border-bottom: 1px solid #333;
+    color: #7f53ac;
 }
-
-
-
 
 .mobile-menu-icon {
     display: none;
