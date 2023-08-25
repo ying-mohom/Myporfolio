@@ -40,21 +40,24 @@ a {
     top: 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 2px 0px;
     background-color: #fff;
+    /* background-color: #fde7f9; */
+    /* background-image: linear-gradient(to left, #f9eef7 0%, #aacaef 74%); */
     z-index: 10000;
 
 }
 
 .logo {
-    margin-top: -15px;
+    margin-top: -25px;
     margin-left: 38px;
     align-items: center;
 }
 
 .logoText {
-    margin-left: -165px;
-    font-weight: 600;
-    font-size: 18px;
+    margin-left: 50px;
+    font-weight: 800;
+    font-size: 1.5rem;
     margin-top: -15px;
+    color: #7f53ac;
 }
 
 .iconForNavbar {

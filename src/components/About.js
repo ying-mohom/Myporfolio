@@ -46,6 +46,14 @@ const About = () => {
                         <p className="text"> I'm a passionate Junior Web Developer dedicated to crafting innovative and engaging web experiences. With a foundation in HTML, CSS, and JavaScript, I thrive on turning ideas into reality. </p>
 
                         <a href="cv/YingMoHomCV.pdf" className="no-decoration" download={true}> <button className="resume">Download CV</button></a>
+                        <div className="mouse-container">
+                            <Link to="skills">
+                                <div className="d-flex justify-content-between">
+                                    <div className="mouse"></div>
+                                    <span className="scroll-text ps-2 pt-3 ">Scroll Down</span>
+                                </div>
+                            </Link>
+                        </div>
                         {/* <Link to="contact"><button className="contact">
                             <div className="button-content">
                                 Contact Me<BsArrowRightShort className="arrow-icon" />
@@ -54,14 +62,7 @@ const About = () => {
                     </div>
                 </div >
             </section >
-            <div className="mouse-container">
-                <Link to="skills">
-                    <div className="d-flex justify-content-between">
-                        <div className="mouse"></div>
-                        <span className="scroll-text ps-2 pt-3 ">Scroll Down</span>
-                    </div>
-                </Link>
-            </div>
+
 
 
 

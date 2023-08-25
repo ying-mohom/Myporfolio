@@ -10,7 +10,11 @@
 
 .section {
     display: flex;
-    height: 550px;
+    height: 98vh;
+    /* background-color: #000; */
+    /* background-color: #fde7f9;
+    background-image: linear-gradient(to left, #f9eef7 0%, #aacaef 74%); */
+
 
 }
 
@@ -46,7 +50,8 @@
 .name {
     font-weight: 800;
     font-size: 50px;
-    color: #f39805;
+    color: #fc9f08;
+    /* color: #6f5fbe; */
 
 }
 
@@ -57,6 +62,7 @@
 }
 
 .image {
+    margin-top: -60px;
     margin-right: 100px;
 }
 
@@ -117,11 +123,12 @@
 }
 
 .mouse-container {
-    margin-top: 35px;
+    /* margin-top: 60px; */
+    padding-top: 100px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 190px;
+    /* align-items: center;
+    justify-content: center; */
+    /* margin-left: 190px; */
 
 }
 

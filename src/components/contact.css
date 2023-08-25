@@ -1,24 +1,21 @@
 .get_in_touch {
-    max-width: 650px;
-    margin: 50px auto;
-    position: relative;
-    box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-
+    margin-top: 200px;
+    margin-bottom: 20px;
+    background-color: #fde7f9;
+    background-image: linear-gradient(315deg, #fde7f9 0%, #aacaef 74%);
 }
 
+
 .get_in_touch .title {
-    text-transform: uppercase;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-size: 3em;
     line-height: 40px;
-    padding-top: 30px;
     padding-bottom: 20px;
-    color: #5543ca;
-    background: linear-gradient(to right, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
 }
 
 .contact-form {
@@ -40,7 +37,7 @@
 
 .contact-form .submit-btn {
     display: inline-block;
-    background: linear-gradient(89deg, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);
+    background: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -49,4 +46,30 @@
     border: none;
     width: 200px;
     cursor: pointer
+}
+
+#textarea-rows {
+    height: 10em;
+}
+
+.form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0px !important;
+
+}
+
+.form-control:focus {
+    border-color: #000;
+    box-shadow: none;
+}
+
+.contact-image-container {
+    padding-left: 100px;
+}
+
+.contact-container {
+    padding-right: 100px;
 }

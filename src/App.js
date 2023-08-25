@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { useTheme } from "./Theme/ThemeProvider";
 import "./App.css";
+import Footer from "./components/Footer";
 
 
 
@@ -42,6 +43,9 @@ function MainContainer() {
       </section>
       <section id="contact">
         <Contact />
+      </section>
+      <section>
+        <Footer />
       </section>
     </div>
   );

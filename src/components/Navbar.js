@@ -44,7 +44,8 @@ const Navbar = () => {
     return (
         <>
             <nav className={`navbar ${isDarkMode ? 'dark-theme' : ''}`}>
-                <img className="logo" src="photos" style={{ width: 50, height: 50 }} /><span className="logoText">Portfolio</span>
+                {/* <img className="logo" src="photos/logo.png" style={{ width: 100, height: 100 }} /> */}
+                <span className="logoText">Y.M.H</span>
                 <button className="mobile-menu-icon" onClick={() => setMobile(!mobile)}>
                     {mobile ? <ImCross /> : <FaBars />}
                 </button>
@@ -55,7 +56,7 @@ const Navbar = () => {
                     <li className="nav-item "> <Link to="skills" smooth={true} onClick={closeMobileMenu} activeClass="active" spy={true} offset={-70} duration={300} >Skills</Link></li>
                     <li className="nav-item "> <Link to="projects" smooth={true} onClick={closeMobileMenu} activeClass="active" spy={true} offset={-70} duration={300} >Projects</Link></li>
                     <li className="nav-item "> <Link to="contact" smooth={true} onClick={closeMobileMenu} activeClass="active" spy={true} offset={-70} duration={300} >Contact</Link></li>
-                    <li onClick={toggleTheme}>
+                    <li onClick={() => { toggleTheme(); closeMobileMenu(); }}>
                         {isDarkMode ? <ImSun /> : <BsMoonStarsFill />}
                     </li>
                 </ul>

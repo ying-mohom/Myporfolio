@@ -3,7 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./project.css";
-
+import { AiOutlineGithub } from "react-icons/ai";
+import { RiLiveLine } from "react-icons/ri";
 
 function Arrow(props) {
     const { className, style, onClick } = props;
@@ -16,6 +17,59 @@ function Arrow(props) {
     );
 }
 
+const projectData = [
+    {
+        title: "Product Registration System",
+        technologies: "Laravel, JavaScript, JQuery",
+        description: "The standard chunk of Lorem Ipsum...",
+        imageSrc: "photos/project1.jpg",
+        liveDemoLink: "#",
+        codeLink: "#"
+    },
+    {
+        title: "Travel Agency",
+        technologies: "HTML , CSS , Bootstrap",
+        description: "The standard chunk of Lorem Ipsum...",
+        imageSrc: "photos/project2.jpg",
+        liveDemoLink: "#",
+        codeLink: "#"
+    },
+    {
+        title: "Shopping At My Store",
+        technologies: "React",
+        description: "The standard chunk of Lorem Ipsum...",
+        imageSrc: "photos/project3.jpg",
+        liveDemoLink: "#",
+        codeLink: "#"
+    },
+    {
+        title: "Product Registration System",
+        technologies: "Laravel, JavaScript, JQuery",
+        description: "The standard chunk of Lorem Ipsum...",
+        imageSrc: "photos/project1.jpg",
+        liveDemoLink: "#",
+        codeLink: "#"
+    },
+    {
+        title: "Travel Agency",
+        technologies: "HTML , CSS , Bootstrap",
+        description: "The standard chunk of Lorem Ipsum...",
+        imageSrc: "photos/project2.jpg",
+        liveDemoLink: "#",
+        codeLink: "#"
+    },
+    {
+        title: "Shopping At My Store",
+        technologies: "React",
+        description: "The standard chunk of Lorem Ipsum...",
+        imageSrc: "photos/project3.jpg",
+        liveDemoLink: "#",
+        codeLink: "#"
+    },
+
+
+
+];
 function Projects() {
     var settings = {
         dots: true,
@@ -28,7 +82,7 @@ function Projects() {
         prevArrow: <Arrow />,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1020,
                 settings: {
                     slidesToShow: 2,
                 },
@@ -45,77 +99,31 @@ function Projects() {
         <section className="container mt-5 ps-5 pe-5">
             <h2 className="project-title"> My Projects</h2>
             <Slider {...settings} className="">
-                <div className="card-container">
-                    <div className="card" style={{ width: "20rem" }}>
-                        <img className="card-img-top" src="photos/profile.png" alt="Card image cap" />
-                        <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" className="btn btn-primary">Go somewhere</a>
+                {projectData.map((project, index) => (
+                    <div className="card-container" key={index}>
+                        <div className="card" style={{ width: "20rem" }}>
+                            <img className="card-img-top" src={project.imageSrc} alt="Card image cap" />
+                            <div className="card-body">
+                                <h5 className="card-title mt-3 mb-2">{project.title}</h5>
+                                <h6 className="card-title">{project.technologies}</h6>
+                                <div className="d-flex justify-content-between mt-4 me-4 mb-2 ">
+                                    <a href={project.liveDemoLink} className="btn button px-3 text-light">
+                                        <RiLiveLine className="me-2 fs-4 text-light" />Demo
+                                    </a>
+                                    <a href={project.codeLink} className="btn button px-3 text-light">
+                                        <AiOutlineGithub className="me-2 text-light fs-3" />Code
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="card-description">
+                                <h3 className="mb-5">Description</h3>
+                                <p>{project.description}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div className="card-container">
-                    <div className="card" style={{ width: "20rem" }}>
-                        <img className="card-img-top" src="photos/profile.png" alt="Card image cap" />
-                        <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" className="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="card-container">
-                    <div className="card" style={{ width: "20rem" }}>
-                        <img className="card-img-top" src="photos/profile.png" alt="Card image cap" />
-                        <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" className="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="card-container">
-                    <div className="card" style={{ width: "20rem" }}>
-                        <img className="card-img-top" src="photos/profile.png" alt="Card image cap" />
-                        <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" className="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="card-container">
-                    <div className="card" style={{ width: "20rem" }}>
-                        <img className="card-img-top" src="photos/profile.png" alt="Card image cap" />
-                        <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" className="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="card-container">
-                    <div className="card" style={{ width: "20rem" }}>
-                        <img className="card-img-top" src="photos/profile.png" alt="Card image cap" />
-                        <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" className="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
+                ))}
             </Slider>
-        </section>
+        </section >
     );
 }
 
