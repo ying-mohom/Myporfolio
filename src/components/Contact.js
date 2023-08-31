@@ -27,7 +27,7 @@ function Contact() {
 
             <div className='row pt-5'>
                 <div className='col-lg-7 col-md-7 col-sm-7 contact-image-container'>
-                    <img src="photos/contact3.png" className="image" style={{ width: 650, height: 650 }} />
+                    <img src="photos/contact3.png" className="imageForContact" />
                 </div>
                 <div className='col-lg-5 col-md-5 col-sm-5 contact-container'>
                     <h1 className='title text-light'>Get in Touch</h1>

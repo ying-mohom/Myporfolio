@@ -1,3 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 .get_in_touch {
     margin-top: 200px;
     margin-bottom: 20px;
@@ -33,7 +40,10 @@
     background-color: transparent;
 }
 
-
+.imageForContact {
+    width: 650px;
+    height: 650px;
+}
 
 .contact-form .submit-btn {
     display: inline-block;
@@ -72,4 +82,12 @@
 
 .contact-container {
     padding-right: 100px;
+}
+
+/*Responsive */
+@media only screen and (max-width: 1366px) {
+    .imageForContact {
+        width: 600px;
+        height: 600px;
+    }
 }

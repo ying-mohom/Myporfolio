@@ -60,13 +60,14 @@ const Skills = () => {
             <h1 className='skill-title'>My Skills</h1>
             <div className='row pt-5'>
                 <div className='col-md-6 ps-5 pe-5' ref={leftColumnRef}>
+                    <h3 className="text-center">Fronted</h3>
                     {progress.map((bar, index) => (
                         <div key={index}>
                             <div className='d-flex justify-content-between'>
                                 <span>{bar.name}</span>
                                 <span>{bar.progress}%</span>
                             </div>
-                            <div className="progress mb-5">
+                            <div className="progress mb-5" style={{ height: "10px" }}>
                                 <div className="progress-bar progress-background" style={{ width: `${bar.progress}%` }} aria-valuenow={bar.progress} aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
@@ -76,13 +77,14 @@ const Skills = () => {
                 </div>
 
                 <div className='col-md-6 ps-5 pe-5' ref={rightColumnRef}>
+                    <h3 className="text-center">Backend</h3>
                     {rightProgress.map((bar, index) => (
                         <div key={index}>
                             <div className='d-flex justify-content-between'>
                                 <span>{bar.name}</span>
                                 <span>{bar.progress}%</span>
                             </div>
-                            <div className="progress mb-5">
+                            <div className="progress mb-5" style={{ height: "10px" }}>
                                 <div className="progress-bar progress-background" style={{ width: `${bar.progress}%` }} aria-valuenow={bar.progress} aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>

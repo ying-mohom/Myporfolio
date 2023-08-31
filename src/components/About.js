@@ -35,14 +35,14 @@ const About = () => {
                 </div>
                 <div div className="main" >
                     <div className="image">
-                        <img src="photos/work.png" alt="MyVectorImage" style={{ width: 450, height: 450 }} />
+                        <img src="photos/work.png" alt="MyVectorImage" />
                     </div>
                     <div className="right">
                         <p>Hi There</p>
                         <h1 className="title">
                             I'm <span className="name">{displayText}</span>
                         </h1>
-                        <h2 className="position">Junior Web Developer</h2>
+                        <h5 className="position">Junior Web Developer</h5>
                         <p className="text"> I'm a passionate Junior Web Developer dedicated to crafting innovative and engaging web experiences. With a foundation in HTML, CSS, and JavaScript, I thrive on turning ideas into reality. </p>
 
                         <a href="cv/YingMoHomCV.pdf" className="no-decoration" download={true}> <button className="resume">Download CV</button></a>

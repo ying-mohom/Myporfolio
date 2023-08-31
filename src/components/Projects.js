@@ -76,7 +76,7 @@ function Projects() {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 2,
+        slidesToScroll: 3,
         initialSlide: 0,
         nextArrow: <Arrow />,
         prevArrow: <Arrow />,
@@ -96,33 +96,34 @@ function Projects() {
         ],
     };
     return (
-        <section className="container mt-5 ps-5 pe-5">
+        <section className="card-container">
             <h2 className="project-title"> My Projects</h2>
             <Slider {...settings} className="">
                 {projectData.map((project, index) => (
-                    <div className="card-container" key={index}>
-                        <div className="card" style={{ width: "20rem" }}>
-                            <img className="card-img-top" src={project.imageSrc} alt="Card image cap" />
-                            <div className="card-body">
-                                <h5 className="card-title mt-3 mb-2">{project.title}</h5>
-                                <h6 className="card-title">{project.technologies}</h6>
-                                <div className="d-flex justify-content-between mt-4 me-4 mb-2 ">
-                                    <a href={project.liveDemoLink} className="btn button px-3 text-light">
-                                        <RiLiveLine className="me-2 fs-4 text-light" />Demo
-                                    </a>
-                                    <a href={project.codeLink} className="btn button px-3 text-light">
-                                        <AiOutlineGithub className="me-2 text-light fs-3" />Code
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="card-description">
-                                <h3 className="mb-5">Description</h3>
-                                <p>{project.description}</p>
+                    <div className="card me-5" key={index}>
+                        <img className="card-img-top" src={project.imageSrc} alt="Card image cap" />
+                        <div className="card-body">
+                            <h5 className="card-title mt-3 mb-2">{project.title}</h5>
+                            <h6 className="card-title">{project.technologies}</h6>
+                            <div className="d-flex justify-content-between mt-4 me-4 mb-2 ">
+                                <a href={project.liveDemoLink} className="btn button px-3 text-light">
+                                    <RiLiveLine className="me-2 fs-4 text-light" />Demo
+                                </a>
+                                <a href={project.codeLink} className="btn button px-3 text-light">
+                                    <AiOutlineGithub className="me-2 text-light fs-3" />Code
+                                </a>
                             </div>
                         </div>
+                        <div className="card-description">
+                            <h3 className="mb-5">Description</h3>
+                            <p>{project.description}</p>
+                        </div>
                     </div>
-                ))}
-            </Slider>
+
+                ))
+                }
+
+            </Slider >
         </section >
     );
 }

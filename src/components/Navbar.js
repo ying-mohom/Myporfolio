@@ -27,12 +27,10 @@ const Navbar = () => {
         }
     };
 
-    //Clean Up function
+
     useEffect(() => {
 
-        updateMobileState(); //Initial render
-
-        //Render Component when window is resize
+        updateMobileState();
         window.addEventListener("resize", updateMobileState);
         console.log("Hello");
 
@@ -44,8 +42,7 @@ const Navbar = () => {
     return (
         <>
             <nav className={`navbar ${isDarkMode ? 'dark-theme' : ''}`}>
-                {/* <img className="logo" src="photos/logo.png" style={{ width: 100, height: 100 }} /> */}
-                <span className="logoText">Y.M.H</span>
+                <img className="logo" src="photos/pflogo(1).png" style={{ width: 100, height: 100 }} />
                 <button className="mobile-menu-icon" onClick={() => setMobile(!mobile)}>
                     {mobile ? <ImCross /> : <FaBars />}
                 </button>

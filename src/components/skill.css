@@ -1,3 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 .progress-background {
     background-color: #647dee;
     background-image: linear-gradient(to right, #647dee 10%, #6469c8 34%);
